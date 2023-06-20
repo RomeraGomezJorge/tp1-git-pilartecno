@@ -36,7 +36,12 @@ function arrayToLengthCounters(animales) {
 */
 
 function findKeysInCommon(objeto1, objeto2) {
-  // Tu código aquí
+  const keysObjeto1 = Object.keys(objeto1);
+  const keysObjeto2 = Object.keys(objeto2);
+
+  keysEnComun = keysObjeto1.filter(key => keysObjeto2.includes(key));
+
+  return keysEnComun;
 }
 
 // Llamamos a las funciones y mostramos los resultados
