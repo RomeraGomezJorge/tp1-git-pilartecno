@@ -17,8 +17,14 @@ function extractValues(data) {
   arrayToLengthCounters(['gato', 'perro', 'elefante']) debería retornar {gato: 4, perro: 5, elefante: 8}
 */
 
-function arrayToLengthCounters(array) {
-  // Tu código aquí
+function arrayToLengthCounters(animales) {
+  let animalLengths = {};
+
+  animales.forEach(function(animal) {
+    animalLengths[animal] = animal.length;
+  });
+
+  return animalLengths;
 }
 
 /*  
